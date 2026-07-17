@@ -1,0 +1,83 @@
+.main-page{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Nunito';
+    background-color: rgb(247, 250, 253);
+    position: relative;
+    overflow-x:hidden;
+}
+p,h1,h2,h3,h4,h5,h6{
+    margin: 0px;
+    
+}
+.body-section{
+    display: flex;
+    
+}
+.left-section{
+    height: 100vh;
+    border-radius: 15px;
+    border: 1px solid rgb(224, 224, 247);
+    padding: 10px;
+    background-color: white;
+    
+}
+.right-section{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.right-top-section{
+
+    width: 95%;
+    height: auto;
+    border-radius: 15px;
+    margin: auto;
+
+}
+.right-middle-section{
+    background-color: white;
+    margin: auto;
+    width: 95%;
+    height: 15vh;
+    border-radius: 15px;
+    border: 1px solid rgb(224, 224, 247);
+}
+.right-bottom-section{
+    background-color: white;
+
+    margin: auto;
+    width: 95%;
+    min-height:50vh ;
+    max-height: auto;
+    border-radius: 15px;
+    border: 1px solid rgb(224, 224, 247);
+}
+
+@media screen and (max-width : 679px){
+    .left-section{
+        position: absolute;
+        left: -200px;
+        width: 20%;
+        transition: left 0.3s ease-in-out;
+    }
+    .left-section.left-section-none{
+        left: 0px;
+        width: 50%;
+        z-index: 1000;
+    }
+}
+@media screen and (min-width : 1024px){
+   .left-section{
+        width: 25%;
+   }
+    .right-section{
+        width: 100%;
+    }
+}

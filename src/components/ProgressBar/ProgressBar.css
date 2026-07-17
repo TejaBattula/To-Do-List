@@ -1,0 +1,35 @@
+.progressBar-page{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.progressBar-title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.progressBar-title p{
+    font-size: 18px;
+    font-weight: 600;
+}
+.progressBar-title div{
+    opacity: 0.7;
+}
+.progressBar-parent{
+    background-color: rgb(218, 218, 218);
+    height: 15px;
+    width: 100%;
+    border-radius: 10px;
+    z-index: 99;
+}
+.progressBar{
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb(100, 139, 64);
+    border-radius: 10px;
+    height: 15px;
+    z-index:100;
+}

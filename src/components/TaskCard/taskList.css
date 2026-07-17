@@ -1,0 +1,94 @@
+.taskListpage{
+    width: 100%;
+    height: auto;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.taskList{
+    background-color:rgb(224, 237, 241);
+    border-radius: 15px;
+    font-size: 15px;
+    color:black;
+    margin-top: 10px;
+    height: 30px;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+
+.taskList button{
+    
+    height: 30px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.task-btns{
+    display: flex;
+    gap: 10px;
+}
+.saved-input{
+    height: 30px;
+    width: 300px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    background-color: rgb(200, 227, 238);
+}
+.delete-btn{
+    background-color: rgb(253, 203, 203);
+    color: red;
+    border: 1px solid rgb(241, 134, 134);
+}
+.complete-btn{
+    background-color: rgb(207, 255, 207);
+    color: rgb(4, 63, 4);
+    border: 1px solid green;
+}
+.edit-btn{
+    background-color: rgb(255, 229, 181);
+    color: rgb(182, 93, 42);
+    border: 1px solid rgb(196, 128, 3);
+}
+.save-btn{
+    background-color: rgb(153, 207, 71);
+    color: rgb(71, 114, 6);
+    border: 1px solid rgb(106, 175, 2);
+}
+.taskList-btns{
+    width: 100%;
+    padding-left: 40px;
+    display: flex;
+    gap: 30px;
+}
+.all-btn,.completed-btn,.pending-btn{
+    height: 30px;
+    min-width: 60px;
+    border: none;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.active{
+    background-color: rgb(148, 148, 240);
+    color: rgb(2, 2, 177);
+}
+@media screen and (max-width:679px) {
+    .taskList{
+        width: 90%;
+        
+
+    }
+}
+@media screen and (min-width:1024px){
+    .taskList{
+        width: 95%;
+    }
+}
