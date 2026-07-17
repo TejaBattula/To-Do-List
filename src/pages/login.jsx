@@ -14,7 +14,7 @@ const Login = ({displayLogin,createAccount,sendEmail}) => {
    
     console.log({email : email,password : password});
     
-    const response=await fetch("http://localhost:3000/login",{
+    const response=await fetch("https://to-do-list-52u2.onrender.com/login",{
       method : 'POST',
       headers:{'content-Type':'application/json'},
       body : JSON.stringify({email : email,password : password}),
@@ -41,7 +41,7 @@ const Login = ({displayLogin,createAccount,sendEmail}) => {
     
     console.log({email : email,password : password});
     
-    const response=await fetch("http://localhost:3000/signup",{
+    const response=await fetch("https://to-do-list-52u2.onrender.com/signup",{
       method : 'POST',
       headers:{'content-Type':'application/json'},
       body : JSON.stringify({email : email,password : password}),

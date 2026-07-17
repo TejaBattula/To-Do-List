@@ -21,7 +21,7 @@ const MainPage = () => {
     
     setTasks([...tasks,task])
     try {
-      const response = await fetch("http://localhost:3000/tasks",{
+      const response = await fetch("https://to-do-list-52u2.onrender.com/tasks",{
         method : 'POST',
         headers:{'content-Type':'application/json'},
         body : JSON.stringify(task)
