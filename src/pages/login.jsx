@@ -41,6 +41,7 @@ const Login = ({displayLogin,createAccount,sendEmail}) => {
     e.preventDefault()
     
     console.log({email : email,password : password});
+    setLoading(true)
     
     const response=await fetch("https://to-do-list-52u2.onrender.com/signup",{
       method : 'POST',
@@ -64,6 +65,8 @@ const Login = ({displayLogin,createAccount,sendEmail}) => {
       console.log(data.message);
 
     }
+    setLoading(false)
+
   }
   useEffect(()=>{
     if(loginStatus=="true"){
