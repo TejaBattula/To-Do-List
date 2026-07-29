@@ -96,7 +96,7 @@ const Login = ({displayLogin,createAccount,sendEmail}) => {
                     </div>
                     {loginStatus=="false"?<p style={{color:"red",fontSize:"12px"}}>Please enter valid password or email</p>:""}
 
-                    <button>Login<div class="spinner"></div></button>
+                    <button>Login{loading?<div class="spinner"></div>:""}</button>
                   </form>
                   <p className='sign-up-switch'>Don't have an account?<span onClick={()=>{setLogin(!islogin)}} style={{color:"rgb(86, 41, 211)",cursor:"pointer"}}>Sign up</span></p>
                   <i onClick={undoLogin} class="fa-regular fa-circle-xmark"></i>
@@ -118,7 +118,7 @@ const Login = ({displayLogin,createAccount,sendEmail}) => {
                 <label htmlFor="password">Password</label>
                 <input onChange={(e)=>{setpassword(e.target.value)}} type="password" name="password" placeholder='🔒........' required />
               </div>
-              <button>Sign Up<div class="spinner"></div></button>
+              <button>Sign Up{loading?<div class="spinner"></div>:""}</button>
             </form>
             <p className='sign-up-switch'>Already have an account?<span onClick={()=>{setLogin(!islogin)}} style={{color:"rgb(86, 41, 211)",cursor:"pointer"}}>Login</span></p>
             <i onClick={undoLogin} class="fa-regular fa-circle-xmark"></i>
