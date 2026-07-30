@@ -85,7 +85,7 @@ const Login = ({displayLogin,createAccount,sendEmail}) => {
             <div className='login-page'>
                   <div className='login-title'>
                     <h1>Login</h1>
-                    <p>Clad to see you again 👋</p>
+                    <p>Glad to see you again 👋</p>
                   </div>
                   <form onSubmit={(e)=>{handleLoginData(e)}}>
 
